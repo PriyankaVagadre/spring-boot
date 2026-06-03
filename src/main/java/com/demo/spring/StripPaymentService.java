@@ -1,7 +1,8 @@
 package com.demo.spring;
 
-public class StripPaymentService {
+public class StripPaymentService implements PaymentService {
+    @Override
     public void processPayment(double amount){
-        System.out.println("StripPAymentServce" + "amount is" + amount);
+        System.out.println("amount is" + amount);
     }
 }
