@@ -1,10 +1,12 @@
 package com.demo.spring;
 
 public class OrderService {
-
+    private PaymentService paymentService;
+    public OrderService(PaymentService paymentService){
+       this.paymentService =paymentService;
+    }
     public void callPaymentService(){
-        var stripPaymentService = new StripPaymentService();
-        stripPaymentService.processPayment(10);
+        paymentService.processPayment(10);
     }
 
 }
