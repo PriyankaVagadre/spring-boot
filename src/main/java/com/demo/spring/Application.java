@@ -13,7 +13,7 @@ public class Application {
      var orderService = context.getBean(OrderService.class); // creating a bean with the help of spring
          orderService.callPaymentService(); // now we have called directly
 
-//        var orderService = new OrderService();
+//        var orderService = new OrderService(); // this is a manual way to create objects
 //        orderService.setPaymentService(new StripPaymentService()); // use setter for optional dependency
 //        orderService.callPaymentService();
 
